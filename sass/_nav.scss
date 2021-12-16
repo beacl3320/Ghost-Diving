@@ -1,0 +1,33 @@
+@use 'color';
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 50px 20px 0;
+    height: 20px;
+    align-items: center;
+
+    &__links a{
+        text-decoration: none;
+        color: color.$fourColor;
+        margin: 0 15px;
+    }
+
+    &__links a:hover{
+        color: color.$fiveColor;
+    }
+    &__icons i{
+        margin: 0 10px;
+        font-size: 25px;
+    }
+    &__cta a{
+        text-decoration: none;
+        padding: 6px 25px;
+        background-color: color.$fourColor;
+        color: color.$threeColor;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 0 15px;
+    }
+}
