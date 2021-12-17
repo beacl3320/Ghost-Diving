@@ -4,30 +4,71 @@
     display: flex;
     justify-content: flex-end;
     margin: 20px 50px 20px 0;
-    height: 20px;
+    height: 30px;
     align-items: center;
+
+    &__links{
+        margin: 0 30px;
+    }
 
     &__links a{
         text-decoration: none;
         color: color.$fourColor;
         margin: 0 15px;
+        font-size: 0.9rem;
     }
 
     &__links a:hover{
         color: color.$fiveColor;
     }
     &__icons i{
-        margin: 0 10px;
-        font-size: 25px;
+        margin: 0 3px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: grey;
+        border-radius: 50%;
+        padding: 5px;
+        color:color.$threeColor;;
     }
+
+    &__icons i:hover{
+        color: color.$sixColor;
+    }
+
     &__cta a{
         text-decoration: none;
         padding: 6px 25px;
-        background-color: color.$fourColor;
+        background-color: color.$sevenColor;
         color: color.$threeColor;
         border-radius: 20px;
         font-weight: 700;
         font-size: 1.2rem;
         margin: 0 15px;
+    }
+    &__cta a:hover{
+        background-color: color.$fourColor;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        justify-content: space-between;
+        margin: 0;
+        &__links{
+            margin: 0;
+        }
+        &__links a{
+            display: none;
+        }
+        &__icons i{
+            width: 28px;
+            height: 32px;
+            border-radius: 0;
+            margin:0;
+        }
+        &__cta a{
+            border-radius: 0;
+            margin: 0;
+        }
     }
 }
