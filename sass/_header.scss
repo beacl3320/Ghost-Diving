@@ -1,0 +1,80 @@
+@use 'color';
+@use 'container';
+
+.header {
+    max-width: 1200px;
+    margin-top: 20px;
+
+    &__logo {
+        position: fixed;
+        z-index: 1;
+        margin: 30px 0 0 30px;
+    }
+
+    &__text {
+        width: 200px;
+    }
+
+    &__text--up {
+        position: absolute;
+        bottom: 300px;
+        right: 30px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: color.$twoColor;
+        width: 50%;
+    }
+
+    &__text--down {
+        position: absolute;
+        color: color.$twoColor;
+        bottom: 150px;
+        right: 30px;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+    &__cta {
+        position: absolute;
+        bottom: 120px;
+        right: 40px;
+        padding: 5px 12px;
+        background-color: color.$sixColor;
+        border-radius: 3px;
+    }
+    &__cta a {
+        color: color.$fiveColor;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__logo img {
+            width: 8rem;
+            margin: -5px 0 0 -5px;
+        }
+        &__text--up {
+            width: 100%;
+            bottom: 115px;
+            right: 0;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__text--down {
+            width: 100%;
+            bottom: 60px;
+            font-size: 0.8rem;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &__cta {
+            bottom: 25px;
+            right: 45%;
+        }
+    }
+}

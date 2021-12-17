@@ -3,9 +3,10 @@
 .nav{
     display: flex;
     justify-content: flex-end;
-    margin: 20px 50px 20px 0;
+    margin: 20px 200px 20px 0;
     height: 30px;
     align-items: center;
+    
 
     &__links{
         margin: 0 30px;
@@ -14,8 +15,8 @@
     &__links a{
         text-decoration: none;
         color: color.$fourColor;
-        margin: 0 15px;
-        font-size: 0.9rem;
+        margin: 0 10px;
+        font-size: 0.8rem;
     }
 
     &__links a:hover{
@@ -23,7 +24,7 @@
     }
     &__icons i{
         margin: 0 3px;
-        font-size: 20px;
+        font-size: 1rem;
         cursor: pointer;
         background-color: grey;
         border-radius: 50%;
@@ -37,7 +38,7 @@
 
     &__cta a{
         text-decoration: none;
-        padding: 6px 25px;
+        padding: 5px 25px;
         background-color: color.$sevenColor;
         color: color.$threeColor;
         border-radius: 20px;
