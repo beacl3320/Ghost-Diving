@@ -78,3 +78,37 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    /* .ssslide {
+        width: 500px;
+        height: 700px;
+        object-fit: cover;
+    } */
+
+    .header{
+
+        &__logo {
+            margin: 20px 0 0 20px;
+        }
+
+        &__logo img {
+            width: 6rem;
+            margin: -5px 0 0 -5px;
+        }
+
+        &__text--up {
+            bottom: 40px;
+            font-size: 1rem;
+        }
+
+        &__text--down {
+            display: none;
+        }
+
+        &__cta {
+            bottom: 10px;
+            right: 40%;
+        }
+    }
+}
