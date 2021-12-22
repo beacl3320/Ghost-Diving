@@ -136,7 +136,7 @@
 
 @media (max-width: 768px) {
   .header__menu {
-    margin: 30px 10px 0 550px;
+    margin: 30px 10px 0 700px;
   }
   .header__menu i {
     font-size: 2.5rem;
@@ -173,7 +173,7 @@
       object-fit: cover;
   } */
   .header__menu {
-    margin: 20px 10px 0 300px;
+    margin: 20px 10px 0 380px;
   }
   .header__menu i {
     font-size: 1.8rem;
