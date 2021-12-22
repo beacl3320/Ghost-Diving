@@ -1,9 +1,9 @@
 @use 'color';
-@use 'container';
+/* @use 'container'; */
 
 .header {
     max-width: 1200px;
-    margin-top: 20px;
+    margin: 20px auto;
 
 /*    &__container{
         display: flex;
