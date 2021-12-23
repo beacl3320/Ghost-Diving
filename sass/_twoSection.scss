@@ -36,7 +36,6 @@ $animationSpeed: 50s;
         overflow: hidden;
         position: relative;
         align-items: center;
-        
         &::before,
         &::after {
             @include white-gradient;
@@ -60,10 +59,74 @@ $animationSpeed: 50s;
             animation: scroll $animationSpeed linear infinite;
             display: flex;
             width: calc(250px * 14);
-            margin: 0 100px;
+            margin: 0 250px;
         }
-        &__slide {
-            height: 100px;
-            width: 250px;
+        &__slide{
+            position: relative;
+            overflow: hidden;
+        }
+        &__slide:hover::after{
+            color:black;
+        }
+        &__slide::after{
+            content:'soy un overlay';
+            font-size: 2rem;
+            color: #fff;
+            background-color: grey;
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            transform: translateY(100%);
+            /* transition: transform .3s; */
         }
 }
+
+.picture{
+    width: 230px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    &__img{
+        display: block;
+        width: 100%;
+    }
+    
+    &__container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: color.$nineColor;
+        width: 100%;
+        height: 100%;
+        padding: 60px 20px;
+        color: color.$fiveColor;
+        transform: translateY(100%);
+        transition: transform .5s;
+    }
+    
+    &:hover .picture__container{
+        transform: translateY(0) ;
+    }
+    
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    &__paragraph{
+        line-height: 1.5;
+        text-decoration: none;
+        border-bottom: 2px solid color.$eightColor;
+        color: color.$eightColor;
+        font-size: 1.5rem;
+    }
+}
+
