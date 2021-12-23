@@ -1,0 +1,47 @@
+@use 'color';
+
+.threeSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    &__title h2{
+        color: color.$eightColor;
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    &__oneSlider{
+        overflow: hidden;
+    }
+    &__video{
+        background-color: color.$nineColor;
+        padding: 25px;
+        border-right: 1px solid color.$sixColor;
+        border-radius: 5px;
+        background: linear-gradient(183deg, rgba(255,255,255,1) 0%, rgba(173,181,189,1) 80%, rgba(173,181,189,1) 100%);
+    }
+    &__oneSlider p{
+        font-size: 1.1rem;
+        color: color.$oneColor;
+        margin-bottom: 1.2rem;
+    }
+    &__iframe{
+        width:500px;
+        height:315px;
+    }
+    &__text h2{
+        color:color.$oneColor;
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+    &__poster img{
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    .threeSection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
