@@ -28,11 +28,15 @@ $animationSpeed: 50s;
         color: color.$eightColor;
         margin-bottom: 15px;
     }
+    &__text p{
+        color: color.$oneColor;
+        font-size: 1.1rem;
+    }
     &__slider {
         background: white;
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
         height: 250px;
-        margin: 50px auto;
+        margin: 100px auto;
         overflow: hidden;
         position: relative;
         align-items: center;
