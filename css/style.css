@@ -409,6 +409,38 @@
   border-radius: 50%;
 }
 
+.footer__recycling {
+  background-color: #004e98;
+}
+.footer__recycling h1 {
+  color: #ffffff;
+  padding: 50px 0 10px 80px;
+}
+.footer__paragraph {
+  padding: 50px 0 50px 80px;
+  width: 100%;
+}
+.footer__paragraph p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.footer__element {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.footer__img {
+  padding: 50px 80px 50px 0;
+}
+.footer__img img {
+  width: 100%;
+}
+
+.link {
+  bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;

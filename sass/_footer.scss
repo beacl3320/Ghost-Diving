@@ -1,0 +1,35 @@
+@use 'color';
+
+.footer{
+    &__recycling{
+        background-color: color.$eightColor;
+    }
+    &__recycling h1{
+        color: color.$threeColor;
+        padding: 50px 0 10px 80px;
+    }
+    &__paragraph{
+        padding: 50px 0 50px 80px;
+        width: 100%;
+    }
+    &__paragraph p{
+        color: color.$threeColor;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    &__element{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    &__img{
+        padding: 50px 80px 50px 0;
+    }
+    &__img img{
+        width: 100%;
+    }
+}
+
+.link{
+    bottom: 0;
+}
