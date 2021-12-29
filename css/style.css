@@ -409,6 +409,9 @@
   border-radius: 50%;
 }
 
+.footer__slider {
+  position: relative;
+}
 .footer__recycling {
   background-color: #004e98;
 }
@@ -435,12 +438,47 @@
 }
 .footer__img img {
   width: 100%;
+  border-radius: 3px;
 }
 
-.link {
-  bottom: 0;
+.slider__anterior,
+.slider__siguiente {
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  border: none;
+  top: 40%;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: green;
 }
 
+.slider__anterior {
+  left: -30px;
+}
+
+.slider__siguiente {
+  right: 30px;
+}
+
+.slider__anterior .element.style {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer__element {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__img {
+    padding: 20px;
+  }
+  .footer__paragraph {
+    padding: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

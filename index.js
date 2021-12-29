@@ -9,7 +9,7 @@ ANIMATION WOW */
 new WOW().init();
 
 
-/* SLIDER GLIDER */
+/* SLIDER CHAPTER */
 window.addEventListener('load', function() {
     new Glider(document.querySelector('.fourSection__list'), {
         slidesToShow: 3,
@@ -34,5 +34,18 @@ window.addEventListener('load', function() {
                 },
             },
         ],
+    })
+})
+
+/* SLIDER RECYCLING */
+window.addEventListener('load', function() {
+    new Glider(document.querySelector('.footer__slider'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        /* arrows: {
+            prev: '.slider__anterior',
+            next: '.slider__siguiente',
+        }, */
     })
 })
